@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Pad Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="word">
+            <div class="container">
+                <div class="functions">
+                    <button onclick="copy()"><img src="/img/copy.png" alt="copy"></button>
+                    <button onclick="toUpperCase()">AA</button>  
+                    <button onclick="toLowerCase()">aa</button>
+                    <button onclick="capitalized()">Aa</button>
+                </div>
+                <div class="writeWhere">
+                    <div class="moreFunctions">
+                        <button class="del" onclick="deleted()">delete</button>
+                        <input type="color" name="colorWell" id="colorWell" onchange="setColorWell()">
+                    </div>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
